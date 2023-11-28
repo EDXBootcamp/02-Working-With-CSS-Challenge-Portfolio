@@ -6,20 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <!-- main logo / nav -->
   <header>
-    <h1>Lernantino</h1>
+    <h1 class="logo">Lernantino</h1>
     <nav>
+      <ul>
+        <li class="active"><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- hero banner -->
   <section class="hero-banner">
-    <div>
+    <div class="hero-banner--content">
       <h2>Cool subtitle here!</h2>
     </div>
   </section>
@@ -27,17 +33,46 @@
   <main class="page-wrapper">
     <!-- about me -->
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h2 class="page-section--title">About Me</h2>
+      <p>Add some information about yourself here.</p>
     </section>
 
     <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
-    </section>
+    <!-- portfolio container -->
+<section class="page-section" id="work">
+  <h2>Work</h2>
+  <div class="portfolio-container">
+    <!-- Project 1 -->
+    <div class="portfolio-item">
+      <img src="./images/02-portfolio-1.jpg" alt="Project 1">
+      <h3>Project 1</h3>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="portfolio-item">
+      <img src="./images/02-portfolio-2.jpg" alt="Project 2">
+      <h3>Project 2</h3>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="portfolio-item">
+      <img src="./images/02-portfolio-3.jpg" alt="Project 3">
+      <h3>Project 3</h3>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="portfolio-item">
+      <img src="./images/02-portfolio-4.jpg" alt="Project 4">
+      <h3>Project 4</h3>
+    </div>
+  </div>
+</section>
+
 
     <!-- contact -->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
+      <p>Add your contact information and a contact form here.</p>
     </section>
   </main>
 </body>

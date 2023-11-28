@@ -21,3 +21,137 @@ h6 {
 p {
   margin: 0;
 }
+
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 10px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo{
+  background-color: #92cccd;
+  padding: 10px 15px 10px 60px;
+  color: #333;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  border-bottom: 3px solid #92cccd;
+  margin: 0 5px;
+  padding: 0px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #92cccd;
+}
+nav li:hover {
+  border-bottom: 3px solid #fff;
+}
+nav li:hover a{
+  color: #fff;
+}
+
+nav li.active {
+  border-bottom: 3px solid #fff;
+}
+nav li.active a{
+  color: #fff;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+  background-image: url('./../images/02-hero-bg.jpg');
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  position: relative;
+  padding: 10px 20px;
+}
+.hero-banner:after{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0,123,255,0.4);
+  z-index: 1;
+}
+.hero-banner--content{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.hero-banner--content h2{
+  background-color: #92cccd;
+  padding: 10px 15px 10px 15px;
+  color: #333;
+}
+
+/* Main Page Styles */
+.page-wrapper {
+  padding: 2rem;
+}
+
+/* Section Styles */
+.page-section {
+  margin-bottom: 3rem;
+  display: flex;
+}
+
+/* Portfolio Styles */
+.portfolio-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio-item {
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item img:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-item h3 {
+  margin: 1rem 0;
+}
+
+/* Contact Section Styles */
+.contact {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .page-wrapper {
+    padding: 1rem;
+  }
+
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
